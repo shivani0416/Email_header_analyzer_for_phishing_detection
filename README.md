@@ -39,7 +39,15 @@ This project is ideal for showcasing **cyber forensics concepts** and real-world
    Paste it into the app and click Analyze Header.
    View the result: Sender IP, keywords found, and whether the email is suspicious.
 
-5. **Future Enhancements**
+5. **Sample Test Headers**
+   A file named sample_header.txt is included in this repository.
+   It contains:
+   Sample 1: A safe email header.
+   Sample 2: A slightly suspicious email header.
+   Sample 3: A phishing email header with malicious keywords.
+   Use these test headers to try out the tool without needing to fetch real email headers.
+
+6. **Future Enhancements**
    Add IP geolocation (track the country of the sender).
    WHOIS lookup for domain age verification.
    Advanced SPF/DKIM validation checks.
