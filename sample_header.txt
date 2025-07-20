@@ -1,0 +1,43 @@
+==========================
+Sample Email Header 1: Safe Email
+==========================
+Delivered-To: user@example.com
+Received: by mail.example.com with SMTP id x12345;
+        Tue, 18 Jul 2023 10:00:25 -0700 (PDT)
+Return-Path: <support@example.com>
+Received: from mail.example.com (mail.example.com [203.0.113.5])
+        by mx.google.com with ESMTPS id abcsi7069823wrq.123.2023.07.18.10.00.25
+        for <user@example.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+        Tue, 18 Jul 2023 10:00:25 -0700 (PDT)
+Subject: Welcome to Example
+From: "Example Support" <support@example.com>
+To: user@example.com
+
+==========================
+Sample Email Header 2: Suspicious Email
+==========================
+Delivered-To: user@example.com
+Received: from unknownhost (unknown [198.51.100.99])
+        by mx.google.com with ESMTP id xyzsi7069823wrq.456.2023.07.18.11.15.25
+        for <user@example.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+        Tue, 18 Jul 2023 11:15:25 -0700 (PDT)
+Return-Path: <security@bankupdates.net>
+Subject: Verify your account information
+From: "Bank Security" <security@bankupdates.net>
+To: user@example.com
+
+==========================
+Sample Email Header 3: Phishing Email
+==========================
+Delivered-To: user@example.com
+Received: from malicious.com (unknown [203.0.113.200])
+        by mx.google.com with ESMTP id pqrsi7069823wrq.789.2023.07.18.12.45.25
+        for <user@example.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+        Tue, 18 Jul 2023 12:45:25 -0700 (PDT)
+Return-Path: <alert@banksecure-login.com>
+Subject: Urgent - Reset Your Password Immediately
+From: "Bank Security Alert" <alert@banksecure-login.com>
+To: user@example.com
